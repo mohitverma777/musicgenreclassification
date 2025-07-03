@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Classification Results</title>
+    {% load static %}
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Classification Results</h2>
+        <div class="results">
+            <p><strong>KNN Prediction:</strong> {{ knn_genre }}</p>
+            <p><strong>SVM Prediction:</strong> {{ svm_genre }}</p>
+            <p><strong>RF Prediction:</strong> {{ rf_genre }}</p>
+            <p><strong>DT Prediction:</strong> {{ dt_genre }}</p>
+        </div>
+
+       <h3 class="sub-title">Audio Features</h3>
+        <!-- <ul class="feature-list">
+            {% for key, value in metadata.items %}
+                <li><span class="feature-key">{{ key }}:</span> <span class="feature-value">{{ value }}</span></li>
+            {% endfor %}
+        </ul> -->
+    </div>
+</body>
+</html>

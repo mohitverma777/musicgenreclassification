@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    clear: both; 
+}
+
+.results p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Feature list styling */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+
+.feature-list li {
+    font-size: 16px;
+    color: #555;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+    width: 48%; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-key {
+    font-weight: 500;
+    color: #333;
+}
+
+.feature-value {
+    font-weight: 400;
+    color: #777;
+    margin-left: 10px;
+}
+
+
+
+/* Form container */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Form heading */
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* Form inputs */
+.form-container form p {
+    margin-bottom: 15px;
+}
+
+.form-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    .results p {
+        font-size: 16px;
+    }
+
+    .feature-list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+    }.feature-list li {
+        width: 100%;
+    }
+}
